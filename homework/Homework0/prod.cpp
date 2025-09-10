@@ -4,16 +4,18 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
-    double num1 = stod(argv[1]);
-    double num2 = stod(argv[2]);
-    double product = num1 * num2;
-    
 
-    if (argc > 1) {
-        cout << argv[1] << " * " << argv[2] << " = " << product << endl;
+    if (argc != 3) {
+        cout << "prod requires 2 arguments" << endl;
+        return 1;
     }
-    else cout << "segementation fault";
+    else {
+        double num1 = stod(argv[1]);
+        double num2 = stod(argv[2]);
+        double product = num1 * num2;
 
-
-    return 0;
+        cout << argv[1] << " * " << argv[2] << " = " << product << endl;
+        return 0;
+    }
+        
 }
