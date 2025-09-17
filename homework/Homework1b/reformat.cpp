@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -15,8 +16,9 @@ string processLine(const string& line){
 
     double sum = points * factor;
 
-    return lastName + ", " + firstName + ": " + to_string(sum);
-
+    stringstream out;
+    out << std::defaultfloat << sum;
+    return lastName + ", " + firstName + ": " + out.str();
 }
 
 int main(int argc, char *argv[]){
