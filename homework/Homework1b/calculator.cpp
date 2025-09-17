@@ -14,7 +14,7 @@ int main(){
         cout << "operation: ";
         getline(cin, operation);
 
-        if (operation == " "){
+        if (operation == ""){
             break;
         }
         else if (
@@ -42,7 +42,7 @@ int main(){
             result = stod(leftOperand) - stod(rightOperand);
             cout << result << endl;
         }
-        else if(operation == "multipy"){
+        else if(operation == "multiply"){
             result = stod(leftOperand) * stod(rightOperand);
             cout << result << endl;
         }
