@@ -11,7 +11,7 @@
 6. `set(i,o)` overwrites the object at index i
 
 ### Building and/or Implementing a List
-- 
+-  
 
 
 

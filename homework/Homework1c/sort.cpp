@@ -1,9 +1,18 @@
 #include <iostream>
 #include <string>
+#include <sstream>
+
+using namespace std;
+
 
 void sort(std::string& a, std::string& b, std::string& c) {
-    // implement sort here
-}
+
+    if (a > b) swap(a, b); // if a has a greater lexicographical value, it is swapped with b
+    if (a > c) swap(a, c); // if a has a greater lexicographical value, it is swapped with c
+    if (b > c) swap(b, c); // if b has a greater lexicographical value, it is swapped with c
+
+    }
+
 
 int main(int argc, char const* argv[]) {
     if (argc < 4) {
